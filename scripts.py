@@ -82,19 +82,19 @@ if __name__ == "__main__":
         if answer == "exit":
             exit("Пока!")
         elif answer in ["1", "2", "3"]:
-            input_full_name = input(
+            user_full_name = input(
                 "Введи Имя и Фамилию (как это записано в электронном журнале):\n"
             ).strip()
 
             if answer == "1":
-                fix_marks(input_full_name)
+                fix_marks(user_full_name)
             elif answer == "2":
-                remove_chastisements(input_full_name)
+                remove_chastisements(user_full_name)
             else:
-                input_subject = input(
+                user_subject = input(
                     "Введи предмет (как записано в электронном журнале):\n"
                 ).strip()
-                create_commendation(input_full_name, input_subject)
+                create_commendation(user_full_name, user_subject)
             print("Готово!\nХочешь изменить что-то еще?")
 
         else:
